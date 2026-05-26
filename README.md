@@ -28,7 +28,7 @@ Atulya HR is planned as a free HR and payroll workflow suite that supports the e
 - Generate payroll review sheet and individual payslip PDFs.
 - Fill HR letters from approved templates.
 - Export compliance preparation reports for review and submission.
-- Feed payroll journals into [Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP).
+- Export payroll journals as accountant-ready Excel/CSV working files.
 
 ## 🏗️ Architecture
 
@@ -53,16 +53,16 @@ Windows `.exe`, macOS `.dmg`, Linux AppImage and Docker-based team deployment; l
 | 1 | Employees, documents, attendance import and payslip templates |
 | 2 | Leave workflow and payroll preview engine |
 | 3 | Statutory preparation reports and export validation |
-| 4 | Approvals, audit trail and ERP journal integration |
-| 5 | Employee self-service portal and Atulya One integration |
+| 4 | Approvals, audit trail and payroll journal exports |
+| 5 | Employee self-service portal and packaged releases |
 
 ## ⚠️ Compliance Boundary
 
 The product will prepare reviewed reports and supported upload files; it will not bypass employer portal authentication, authorizations, OTPs, payments or filing responsibilities.
 
-## 🔗 Ecosystem
+## 🔗 Independent Atulya Projects
 
-[Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [Atulya Office](https://github.com/atulyaai/Atulya-Office) · [Atulya DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Atulya One](https://github.com/atulyaai/Atulya-Automation-Hub)
+This is a standalone product. Discover other independent Atulya repositories: [Automation Hub](https://github.com/atulyaai/Atulya-Automation-Hub) · [ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [GST](https://github.com/atulyaai/Atulya-GST-Suite) · [SAP](https://github.com/atulyaai/Atulya-SAP-Automations) · [Office](https://github.com/atulyaai/Atulya-Office) · [DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Convert](https://github.com/atulyaai/Atulya-All-File-Converter) · [Host](https://github.com/atulyaai/Atulya-Launch)
 
 ## 📜 License
 
