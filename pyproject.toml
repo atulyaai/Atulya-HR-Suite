@@ -45,4 +45,5 @@ atulya-hr = "atulya_hr_suite.cli:main"
 version = {attr = "atulya_hr_suite.__version__"}
 
 [tool.setuptools.packages.find]
-where = ["src"]
+include = ["*"]
+
