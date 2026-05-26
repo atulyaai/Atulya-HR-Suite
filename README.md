@@ -28,7 +28,7 @@ Atulya HR is planned as a free HR and payroll workflow suite that supports the e
 - Generate payroll review sheet and individual payslip PDFs.
 - Fill HR letters from approved templates.
 - Export compliance preparation reports for review and submission.
-- Feed payroll journals into [Atulya ERP](https://github.com/atulyaai/Atulya-ERP).
+- Feed payroll journals into [Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP).
 
 ## 🏗️ Architecture
 
@@ -62,7 +62,7 @@ The product will prepare reviewed reports and supported upload files; it will no
 
 ## 🔗 Ecosystem
 
-[Atulya ERP](https://github.com/atulyaai/Atulya-ERP) · [Atulya Office](https://github.com/atulyaai/Atulya-Office) · [Atulya DataClean](https://github.com/atulyaai/Atulya-DataClean) · [Atulya One](https://github.com/atulyaai/Atulya-One)
+[Atulya ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [Atulya Office](https://github.com/atulyaai/Atulya-Office) · [Atulya DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Atulya One](https://github.com/atulyaai/Atulya-Automation-Hub)
 
 ## 📜 License
 
