@@ -1,14 +1,14 @@
-# Atulya HR
+# Atulya-HR-Suite
 
 > **People, payroll and compliance preparation in one simple workspace.** 👥💼
 
-![Atulya - One-click business automation](assets/atulya-hero.png)
+![Atulya-HR-Suite banner](assets/atulya-hero.png)
 
 ![Status](https://img.shields.io/badge/status-roadmap-f59e0b)
 ![Focus](https://img.shields.io/badge/focus-HR%20%7C%20payroll%20%7C%20documents-14b8a6)
 ![Delivery](https://img.shields.io/badge/planned-local--first%20desktop%20%26%20web-2563eb)
 
-Atulya HR is planned as a free HR and payroll workflow suite that supports the employee journey from joining to full-and-final settlement, with exports and working files designed for practical business use.
+Atulya-HR-Suite is planned as a free HR and payroll workflow suite that supports the employee journey from joining to full-and-final settlement, with exports and working files designed for practical business use.
 
 > 🚧 Product roadmap only today. Payroll calculations and statutory outputs must be verified before production use once released.
 
@@ -59,10 +59,6 @@ Windows `.exe`, macOS `.dmg`, Linux AppImage and Docker-based team deployment; l
 ## ⚠️ Compliance Boundary
 
 The product will prepare reviewed reports and supported upload files; it will not bypass employer portal authentication, authorizations, OTPs, payments or filing responsibilities.
-
-## 🔗 Independent Atulya Projects
-
-This is a standalone product. Discover other independent Atulya repositories: [Automation Hub](https://github.com/atulyaai/Atulya-Automation-Hub) · [ERP](https://github.com/atulyaai/Atulya-Accounting-ERP) · [GST](https://github.com/atulyaai/Atulya-GST-Suite) · [SAP](https://github.com/atulyaai/Atulya-SAP-Automations) · [Office](https://github.com/atulyaai/Atulya-Office) · [DataClean](https://github.com/atulyaai/Atulya-Data-Scruber) · [Invoice](https://github.com/atulyaai/Atulya-Invoice) · [Convert](https://github.com/atulyaai/Atulya-All-File-Converter) · [Host](https://github.com/atulyaai/Atulya-Launch)
 
 ## 📜 License
 
