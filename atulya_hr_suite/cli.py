@@ -5,7 +5,6 @@ from datetime import datetime, date
 from functools import wraps
 from rich.console import Console
 from rich.table import Table
-from rich.progress import Progress
 from .utils import init_db, get_connection, indian_format, financial_year
 from .core import (
     EmployeeManager, AttendanceManager, LeaveManager,

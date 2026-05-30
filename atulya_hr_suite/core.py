@@ -257,17 +257,17 @@ class LeaveManager:
                     """INSERT INTO leave_balance
                        (employee_id, financial_year, leave_type, opening, credited)
                        VALUES (?, ?, ?, ?, ?)""",
-                    (employee_id, fy, lt["code"], lt["days_per_year"], lt["days_per_year"]),
+                    (employee_id, fy, lt["code"], 0, lt["days_per_year"]),
                 )
         self.conn.commit()
 
-    def _count_working_days(self, start_date, end_date):
+    def _count_working_days(self, employee_id, start_date, end_date):
         current = start_date
         count = 0.0
         while current <= end_date:
             att = self.conn.execute(
                 "SELECT status FROM attendance WHERE employee_id = ? AND date = ?",
-                (0, current.isoformat()),
+                (employee_id, current.isoformat()),
             ).fetchone()
             if att and att["status"] in ("holiday", "weekoff"):
                 current += timedelta(days=1)
@@ -279,7 +279,7 @@ class LeaveManager:
     def apply(self, employee_id, leave_type, start_date, end_date, reason=None):
         s = datetime.strptime(start_date, "%Y-%m-%d").date()
         e = datetime.strptime(end_date, "%Y-%m-%d").date()
-        total_days = self._count_working_days(s, e)
+        total_days = self._count_working_days(employee_id, s, e)
         if total_days <= 0:
             return None, "No working days in selected range"
         if leave_type != "LWP":
@@ -437,11 +437,11 @@ class PayrollManager:
                 (employee_id, f"{month:02d}", str(year)),
             ).fetchone()[0]
             if lwp_leaves:
-                daily_rate = (emp["basic_pay"] or 0 + emp["da"] or 0) / 30
+                daily_rate = ((emp["basic_pay"] or 0) + (emp["da"] or 0)) / 30
                 leave_deduction = round(daily_rate * lwp_leaves, 2)
 
         total_deductions = round(
-            pf["employee"] + esi["employee"] + pt + tds + leave_deduction + arrears*0 + other_deductions,
+            pf["employee"] + esi["employee"] + pt + tds + leave_deduction + other_deductions,
             2,
         )
         net_pay = round(gross_pay - total_deductions + arrears, 2)
